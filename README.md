@@ -37,3 +37,4 @@
 | `ctrl+cmd+7` | 全大写                    |
 
 ### Gitee
+https://gitee.com/SunshineC/name-conversion
