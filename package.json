@@ -1,0 +1,114 @@
+{
+	"name": "name-conversion",
+	"displayName": "name conversion",
+	"description": "name conversion",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.67.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:name-conversion.camelCase",
+		"onCommand:name-conversion.upperCamelCase",
+		"onCommand:name-conversion.snake",
+		"onCommand:name-conversion.hyphen",
+		"onCommand:name-conversion.constant",
+		"onCommand:name-conversion.lowercaseBlank",
+		"onCommand:name-conversion.uppercaseBlank"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "name-conversion.camelCase",
+				"title": "camelCase"
+			},
+			{
+				"command": "name-conversion.upperCamelCase",
+				"title": "upperCamelCase"
+			},
+			{
+				"command": "name-conversion.snake",
+				"title": "snake"
+			},
+			{
+				"command": "name-conversion.hyphen",
+				"title": "hyphen"
+			},
+			{
+				"command": "name-conversion.constant",
+				"title": "constant"
+			},
+			{
+				"command": "name-conversion.lowercaseBlank",
+				"title": "lowercaseBlank"
+			},
+			{
+				"command": "name-conversion.uppercaseBlank",
+				"title": "uppercaseBlank"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "name-conversion.camelCase",
+				"key": "ctrl+1",
+				"mac": "ctrl+cmd+1",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "name-conversion.upperCamelCase",
+				"key": "ctrl+2",
+				"mac": "ctrl+cmd+2",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "name-conversion.snake",
+				"key": "ctrl+3",
+				"mac": "ctrl+cmd+3",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "name-conversion.hyphen",
+				"key": "ctrl+4",
+				"mac": "ctrl+cmd+4",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "name-conversion.constant",
+				"key": "ctrl+5",
+				"mac": "ctrl+cmd+5",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "name-conversion.lowercaseBlank",
+				"key": "ctrl+6",
+				"mac": "ctrl+cmd+6",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "name-conversion.uppercaseBlank",
+				"key": "ctrl+7",
+				"mac": "ctrl+cmd+7",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.67.0",
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.0",
+		"@types/node": "14.x",
+		"eslint": "^8.11.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.2.2",
+		"typescript": "^4.5.5",
+		"@vscode/test-electron": "^2.1.3"
+	}
+}
