@@ -6,8 +6,9 @@
 	"engines": {
 		"vscode": "^1.67.0"
 	},
+	"icon": "images/icon.jpg",
 	"categories": [
-		"Other"
+		"Extension Packs"
 	],
 	"activationEvents": [
 		"onCommand:name-conversion.camelCase",
