@@ -1,5 +1,6 @@
 {
 	"name": "name-conversion",
+	"publisher": "name-conversion",
 	"displayName": "name conversion",
 	"description": "name conversion",
 	"version": "0.0.1",
